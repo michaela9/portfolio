@@ -32,6 +32,7 @@ export type PortfolioItemType = {
   tech: string;
   description: string;
   href: string;
+  reversed?: boolean;
 };
 export const portfolioData: PortfolioItemType[] = [
   {
@@ -42,6 +43,7 @@ export const portfolioData: PortfolioItemType[] = [
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
     description: '',
     href: 'https://www.zixkomix.com/',
+    reversed: false,
   },
   {
     title: 'Vítr do plachet pro Eleonorku',
@@ -51,6 +53,7 @@ export const portfolioData: PortfolioItemType[] = [
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
     description: '',
     href: 'https://vitrdoplachetproeleonorku.cz/',
+    reversed: true,
   },
   {
     title: 'REACTGIRLS',
@@ -60,6 +63,7 @@ export const portfolioData: PortfolioItemType[] = [
     tech: 'DESIGN | DEVELOPMENT | REACT',
     description: '',
     href: 'https://reactgirls.com/',
+    reversed: false,
   },
   {
     title: 'Hornická města',
@@ -69,6 +73,7 @@ export const portfolioData: PortfolioItemType[] = [
     tech: 'DESIGN | DEVELOPMENT ',
     description: '',
     href: 'https://hornickamesta.kutnahora.cz/',
+    reversed: true,
   },
   {
     title: 'FITNUT',
@@ -78,6 +83,7 @@ export const portfolioData: PortfolioItemType[] = [
     tech: 'DEVELOPMENT | REACT | TYPESCRIPT',
     description: '',
     href: 'https://fitnut.cz/',
+    reversed: false,
   },
   {
     title: 'BRAINEE',
@@ -88,5 +94,6 @@ export const portfolioData: PortfolioItemType[] = [
     description:
       'fko hdi hhiudh i iudh diug dkg dkig keg rfiuhe fh ldhuk fkhj dlih lfih dlih fildj lfih dil glid ilgh ldihg oiůdh glidh oigh ogih godih glidh ilhg li',
     href: 'https://brainee.cz/',
+    reversed: true,
   },
 ];

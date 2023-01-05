@@ -2,6 +2,7 @@ import { MoonIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import React, { Dispatch, SetStateAction, useContext } from 'react';
 import { BsLinkedin, BsFillMoonStarsFill, BsGithub } from 'react-icons/bs';
+import CustomLink from './CustomLink';
 import Logo from './Logo';
 
 interface Props {
@@ -45,11 +46,7 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
             </button>
           </li>
           <li>
-            <Link href="#">
-              <div className="rounded-lg bg-cyan-500 px-5 py-3 font-semibold text-white transition-transform duration-150 ease-in-out hover:scale-110 dark:bg-cyan-700">
-                Resume
-              </div>
-            </Link>
+            <CustomLink href="#">Resume</CustomLink>
           </li>
         </ul>
       </div>

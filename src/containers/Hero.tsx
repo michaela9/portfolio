@@ -5,10 +5,10 @@ export default function Hero() {
   return (
     <section className="grid grid-cols-2 items-start gap-8">
       <div className="flex flex-col gap-4 py-20">
-        <h2 className="font-montserrat text-5xl font-medium leading-10 text-cyan-800 dark:text-white">
+        <h2 className="font-montserrat text-5xl font-semibold leading-10 text-cyan-800 dark:text-white">
           Hi, I am
         </h2>
-        <h2 className="font-montserrat text-5xl font-medium leading-10 text-cyan-800 dark:text-white">
+        <h2 className="font-montserrat text-5xl font-semibold leading-10 text-cyan-800 dark:text-white">
           Michaela Rudolfová
         </h2>
         <h3 className="text-xl font-bold">Frontend developer based in Prague</h3>

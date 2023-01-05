@@ -10,7 +10,7 @@ interface Props {
 export default function Portfolio({ portfolioData }: Props) {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-4xl font-bold text-cyan-800 dark:text-cyan-500">Portfolio</h2>
+      <h2 className="text-5xl font-semibold text-cyan-800 dark:text-cyan-500">Portfolio</h2>
       <div className="flex flex-col gap-6">
         {portfolioData.map((item) => (
           <PortfolioItem
@@ -22,6 +22,7 @@ export default function Portfolio({ portfolioData }: Props) {
             tech={item.tech}
             description={item.description}
             href={item.href}
+            reversed={item.reversed}
           />
         ))}
       </div>
