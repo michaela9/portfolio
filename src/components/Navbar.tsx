@@ -1,4 +1,3 @@
-import { MoonIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import React, { Dispatch, SetStateAction, useContext } from 'react';
 import { BsLinkedin, BsFillMoonStarsFill, BsGithub } from 'react-icons/bs';
@@ -12,12 +11,12 @@ interface Props {
 
 export default function Navbar({ darkMode, setDarkMode }: Props) {
   return (
-    <nav className="relative z-20 bg-gray-100 py-10 px-4 dark:bg-gray-800">
+    <nav className="relative z-20 bg-gray-100 py-10 px-4 dark:bg-gray-800 dark:text-my-gray-light">
       <div className="mx-auto flex max-w-7xl justify-between">
         <Link href="/">
           <Logo className="" />
         </Link>
-        <ul className="flex items-center gap-10">
+        <ul className="relative flex items-center gap-10">
           <li>
             <CustomLink href="/" type="secondary">
               Home
@@ -66,7 +65,7 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
               target="blank"
               type="primary"
               rel="noopener noreferrer"
-              className="hover:scale-110"
+              className="inline-block hover:scale-105"
             >
               Resume
             </CustomLink>

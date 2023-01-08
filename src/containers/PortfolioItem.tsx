@@ -1,12 +1,10 @@
 import classnames from 'classnames';
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import CustomLink from '../components/CustomLink';
 import Heading3 from '../components/Heading3';
 
 type Props = {
-  index: string;
   description: ReactElement;
   title: string;
   src: string;
@@ -17,7 +15,6 @@ type Props = {
 };
 
 export default function PortfolioItem({
-  index,
   description,
   title,
   src,
@@ -40,7 +37,7 @@ export default function PortfolioItem({
         })}
       >
         <CustomLink href={href} type="unstyled" target="blank">
-          <div className="relative h-full w-full transition-all duration-200 ease-in-out hover:scale-110">
+          <div className="relative h-full w-full transition-all duration-200 ease-in-out hover:scale-105">
             <Image src={src} alt={alt} width={1200} height={850} />
           </div>
         </CustomLink>

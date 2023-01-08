@@ -23,7 +23,6 @@ export default function Skills({ hardSkills, softSkills }: Props) {
             ))}
           </div>
         </SkillsWrapper>
-
         <SkillsWrapper>
           <div className="mb-3 flex items-center gap-2">
             <GiPikeman size={'3rem'} />

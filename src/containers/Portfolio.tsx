@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import Heading2 from '../components/Heading2';
 import type { PortfolioItemType } from '../data';
@@ -19,7 +18,6 @@ export default function Portfolio({ portfolioData }: Props) {
           <PortfolioItem
             key={item.index}
             title={item.title}
-            index={item.index}
             alt={item.alt}
             src={item.src}
             tech={item.tech}

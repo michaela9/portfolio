@@ -23,7 +23,7 @@ export default function CustomLink({
         '': type === 'unstyled',
         'rounded-lg bg-cyan-500 px-5 py-3 font-semibold text-white transition-transform duration-150 ease-in-out hover:scale-110 dark:bg-cyan-700':
           type === 'primary',
-        'font-medium text-cyan-500 hover:underline': type === 'secondary',
+        'font-medium text-cyan-500 hover:underline dark:text-cyan-400': type === 'secondary',
       })}
       {...rest}
     >

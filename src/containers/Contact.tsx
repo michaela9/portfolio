@@ -41,7 +41,6 @@ export default function Contact() {
                   target="blank"
                   type="secondary"
                   rel="noopener noreferrer"
-                  className="hover:scale-110"
                 >
                   Download Resume
                 </CustomLink>

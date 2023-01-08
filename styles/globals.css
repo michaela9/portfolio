@@ -5,6 +5,6 @@
 @layer base {
   html {
     @apply font-montserrat;
-    @apply text-my-gray-text-dark dark:text-my-gray-text-light;
+    @apply text-my-gray-text-dark;
   }
 }

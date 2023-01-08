@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import About from '../src/containers/About';
-import Contact from '../src/containers/Contact';
-import HomePage from '../src/containers/HomePage';
 
 export default function AboutPage() {
   return (
@@ -13,7 +11,7 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-gray-100 px-6 dark:bg-gray-800">
+        <div className="bg-gray-100 px-6 dark:bg-gray-800 dark:text-my-gray-light">
           <About />
         </div>
       </main>
