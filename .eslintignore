@@ -1,0 +1,8 @@
+.idea
+.next
+
+.pnpm-store
+node_modules
+public
+
+test
