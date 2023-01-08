@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Heading2 from '../components/Heading2';
 import type { PortfolioItemType } from '../data';
 import PortfolioItem from './PortfolioItem';
 
@@ -10,7 +11,9 @@ interface Props {
 export default function Portfolio({ portfolioData }: Props) {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-5xl font-semibold text-cyan-800 dark:text-cyan-500">Portfolio</h2>
+      <div className="border-b border-cyan-800 py-4">
+        <Heading2>Personal portfolio</Heading2>
+      </div>
       <div className="flex flex-col gap-6">
         {portfolioData.map((item) => (
           <PortfolioItem

@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-gray-100 px-6 text-my-gray-text dark:bg-gray-800 dark:text-my-gray-light">
+        <div className="bg-gray-100 px-6 text-my-gray-text-dark dark:bg-gray-800 dark:text-my-gray-text-light">
           <HomePage />
         </div>
       </main>

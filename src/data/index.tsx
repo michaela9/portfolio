@@ -1,3 +1,6 @@
+import { ReactElement } from 'react';
+import Description from '../components/Description';
+
 export const hardSkills: string[] = [
   'HTML',
   'CSS',
@@ -30,7 +33,7 @@ export type PortfolioItemType = {
   alt: string;
   src: string;
   tech: string;
-  description: string;
+  description: ReactElement;
   href: string;
   reversed?: boolean;
 };
@@ -39,9 +42,19 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'ZIX KOMIX',
     index: '01',
     alt: 'ZIX KOMIX project',
-    src: '/images/laptop-01-reactgirls-hero.jpg',
+    src: '/images/zixkomix_1100x700.png',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
-    description: '',
+    description: (
+      <>
+        <Description>
+          Projekt vytvořený na podporu krásného produktu a to první discgolfové příručky v Čechách.
+        </Description>
+        <Description>
+          Na webu jsou použity ilustrace z knihy a celé je to doplněné podporující grafikou. Web byl
+          navržen ve Figmě a vytvořen pomocí Webflow.
+        </Description>
+      </>
+    ),
     href: 'https://www.zixkomix.com/',
     reversed: false,
   },
@@ -51,7 +64,12 @@ export const portfolioData: PortfolioItemType[] = [
     alt: 'Vítr do plachet pro Eleonorku',
     src: '/images/laptop-01-reactgirls-hero.jpg',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
-    description: '',
+    description: (
+      <Description>
+        Dobrovolnický projekt vytvořený na podporu malé Eleonorky diagnostikované onemocněním SMA.
+        Projekt byl vytvořen pomocí nástroje Webflow.
+      </Description>
+    ),
     href: 'https://vitrdoplachetproeleonorku.cz/',
     reversed: true,
   },
@@ -59,9 +77,19 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'REACTGIRLS',
     index: '03',
     alt: 'ReactGirls project',
-    src: '/images/laptop-01-reactgirls-hero.jpg',
+    src: '/images/mobile-reactgirls.png',
     tech: 'DESIGN | DEVELOPMENT | REACT',
-    description: '',
+    description: (
+      <>
+        <Description>
+          Projekt vznikl během mé účasti na mentoringovém programu komunity ReactGirls.
+        </Description>
+        <Description>
+          Pod vedení mentora jsem samostatně zpracovala projekt od návrhu designu ve Figmě po
+          development v Reactu.
+        </Description>
+      </>
+    ),
     href: 'https://reactgirls.com/',
     reversed: false,
   },
@@ -69,31 +97,30 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'Hornická města',
     index: '04',
     alt: 'Hornická města projekt',
-    src: '/images/laptop-01-reactgirls-hero.jpg',
+    src: '/images/hornicka-mesta.jpg',
     tech: 'DESIGN | DEVELOPMENT ',
-    description: '',
+    description: (
+      <Description>
+        Projekt zpracovaný pro město Kutná Hora k podzimní akci Hornická města včetně přihlašovacího
+        formuláře.
+      </Description>
+    ),
     href: 'https://hornickamesta.kutnahora.cz/',
     reversed: true,
   },
   {
-    title: 'FITNUT',
+    title: 'Adopt me',
     index: '05',
-    alt: 'FITNUT AKADAMIE',
+    alt: 'Adopt me training project',
     src: '/images/laptop-01-reactgirls-hero.jpg',
-    tech: 'DEVELOPMENT | REACT | TYPESCRIPT',
-    description: '',
+    tech: 'DEVELOPMENT | REACT | TYPESCRIPT ',
+    description: (
+      <Description>
+        Projekt zpracovaný v rámci React kurzi na Frontend Masters. Mezi použité technologie patří
+        např. Vite, typescript, tailwind.
+      </Description>
+    ),
     href: 'https://fitnut.cz/',
     reversed: false,
-  },
-  {
-    title: 'BRAINEE',
-    index: '06',
-    alt: 'BRAINEE AKADAMIE',
-    src: '/images/laptop-01-reactgirls-hero.jpg',
-    tech: 'DEVELOPMENT | REACT | TYPESCRIPT',
-    description:
-      'fko hdi hhiudh i iudh diug dkg dkig keg rfiuhe fh ldhuk fkhj dlih lfih dlih fildj lfih dil glid ilgh ldihg oiůdh glidh oigh ogih godih glidh ilhg li',
-    href: 'https://brainee.cz/',
-    reversed: true,
   },
 ];
