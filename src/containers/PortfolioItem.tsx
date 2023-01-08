@@ -52,7 +52,7 @@ export default function PortfolioItem({
         })}
       >
         <Heading3>{title}</Heading3>
-        <p className="font medium text-sm">{tech}</p>
+        <p className="text-sm font-medium">{tech}</p>
         <p
           className={classnames({
             'text-right': reversed,
@@ -61,7 +61,7 @@ export default function PortfolioItem({
         >
           {description}
         </p>
-        <CustomLink href={href} target="blank">
+        <CustomLink href={href} target="blank" type="primary">
           Přejít na web
         </CustomLink>
       </div>

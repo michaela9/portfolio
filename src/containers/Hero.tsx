@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import CustomLink from '../components/CustomLink';
 import Description from '../components/Description';
 import Heading1 from '../components/Heading1';
 import Heading3 from '../components/Heading3';
@@ -18,11 +19,15 @@ export default function Hero() {
           more and more.
         </Description>
         <Description>
-          Nowadays, my favorite technologies are React, Typescript, tailwind and graphQl.
+          Nowadays, my favorite technologies are React, Typescript, tailwind and graphQl. I am open
+          minded about technologies for the future and maybe want to try more fullstack or backend
+          technologies either.
         </Description>
-        <button className="flex h-28 w-28 origin-center items-center justify-center rounded-full bg-cyan-500 font-semibold uppercase text-white transition-transform duration-300 ease-in-out hover:rotate-45 dark:bg-cyan-700">
-          Write me
-        </button>
+        <CustomLink href="/contact">
+          <div className="flex h-28 w-28 origin-center items-center justify-center rounded-full bg-cyan-500 font-semibold uppercase text-white transition-transform duration-300 ease-in-out hover:rotate-45 dark:bg-cyan-700">
+            Write me
+          </div>
+        </CustomLink>
       </div>
 
       <img src="/images/profil_800x711.png" alt="profil-photo" className="relative w-full" />

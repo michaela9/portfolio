@@ -15,9 +15,24 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
     <nav className="relative z-20 bg-gray-100 py-10 px-4 dark:bg-gray-800">
       <div className="mx-auto flex max-w-7xl justify-between">
         <Link href="/">
-          <Logo className="text-my-gray-text-dark dark:text-white" />
+          <Logo className="" />
         </Link>
         <ul className="flex items-center gap-10">
+          <li>
+            <CustomLink href="/" type="secondary">
+              Home
+            </CustomLink>
+          </li>
+          <li>
+            <CustomLink href="/about" type="secondary">
+              About
+            </CustomLink>
+          </li>
+          <li>
+            <CustomLink href="/contact" type="secondary">
+              Contact
+            </CustomLink>
+          </li>
           <li>
             <CustomLink
               href="https://www.linkedin.com/in/michaela-rudolfov%C3%A1-673893185/"
@@ -25,7 +40,7 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
             >
               <BsLinkedin
                 size={'1.5rem'}
-                className="text-my-gray-text-dark transition-transform duration-150 ease-in-out hover:scale-125 dark:text-my-gray-light"
+                className="transition-transform duration-150 ease-in-out hover:scale-125"
               />
             </CustomLink>
           </li>
@@ -33,7 +48,7 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
             <CustomLink href="https://github.com/michaela9" target="blank">
               <BsGithub
                 size={'1.7rem'}
-                className="text-my-gray-text-dark transition-transform duration-150 ease-in-out hover:scale-125 dark:text-my-gray-light"
+                className="transition-transform duration-150 ease-in-out hover:scale-125"
               />
             </CustomLink>
           </li>
@@ -41,7 +56,7 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
             <button onClick={() => setDarkMode(!darkMode)}>
               <BsFillMoonStarsFill
                 size={'1.5rem'}
-                className="text-my-gray-text-dark transition-transform duration-150 ease-in-out hover:scale-125 dark:text-my-gray-light"
+                className="transition-transform duration-150 ease-in-out hover:scale-125"
               />
             </button>
           </li>

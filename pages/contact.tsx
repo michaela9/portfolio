@@ -1,7 +1,8 @@
 import Head from 'next/head';
+import Contact from '../src/containers/Contact';
 import HomePage from '../src/containers/HomePage';
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <>
       <Head>
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <div className="bg-gray-100 px-6 dark:bg-gray-800">
-          <HomePage />
+          <Contact />
         </div>
       </main>
     </>
