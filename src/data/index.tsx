@@ -62,7 +62,7 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'Vítr do plachet pro Eleonorku',
     index: '02',
     alt: 'Vítr do plachet pro Eleonorku',
-    src: '/images/laptop-01-reactgirls-hero.jpg',
+    src: '/images/zixkomix_1100x700.png',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
     description: (
       <Description>
@@ -112,7 +112,7 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'Adopt me',
     index: '05',
     alt: 'Adopt me training project',
-    src: '/images/laptop-01-reactgirls-hero.jpg',
+    src: '/images/zixkomix_1100x700.png',
     tech: 'DEVELOPMENT | REACT | TYPESCRIPT ',
     description: (
       <Description>
@@ -122,5 +122,27 @@ export const portfolioData: PortfolioItemType[] = [
     ),
     href: 'https://fitnut.cz/',
     reversed: false,
+  },
+  {
+    title: 'Diploma project in architecture',
+    index: '06',
+    alt: 'Diploma project in architecture',
+    src: '/images/diplomka-rez.jpg',
+    tech: 'AUTOCAD | RHINO | PHOTOSHOP | INDESIGN',
+    description: (
+      <>
+        <Description>
+          Jako diplomní projekt na Fakultě architektury ČVUT jsem zpracovávala studii na téma
+          Konverze Radimského mlýnu v Kolíně.
+        </Description>
+        <Description>
+          Cílem bylo rehabilitovat oblast pro novou kreativní funkci. Hlavním oživením objektu byla
+          navržena coworkingová funkce společných a samostatných pracovišť. Součástí areálu byla
+          navržena galerie, obytná a ubytovací funkce.
+        </Description>
+      </>
+    ),
+    href: 'https://docplayer.cz/46566903-Konverze-arealu-radimskeho-mlyna-v-koline-diplomova-prace.html',
+    reversed: true,
   },
 ];

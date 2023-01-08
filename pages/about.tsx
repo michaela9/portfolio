@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import HomePage from '../src/containers/HomePage';
+import About from '../src/containers/About';
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
         <div className="bg-gray-100 px-6 dark:bg-gray-800 dark:text-my-gray-light">
-          <HomePage />
+          <About />
         </div>
       </main>
     </>
