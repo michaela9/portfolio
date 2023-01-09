@@ -6,7 +6,7 @@ import Logo from './Logo';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-800 dark:text-my-gray-light">
+    <footer className="bg-gray-50 dark:bg-gray-800 dark:text-my-gray-light">
       <div className="mx-auto grid max-w-7xl grid-cols-3 items-end pb-10">
         <button className="flex h-28 w-28 origin-center items-center justify-center rounded-full bg-cyan-500 font-semibold uppercase text-white transition-transform duration-300 ease-in-out hover:rotate-45 dark:bg-cyan-700">
           Write me

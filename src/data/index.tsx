@@ -62,7 +62,7 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'Vítr do plachet pro Eleonorku',
     index: '02',
     alt: 'Vítr do plachet pro Eleonorku',
-    src: '/images/zixkomix_1100x700.png',
+    src: '/images/eleonorka_1100.jpg',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
     description: (
       <Description>
@@ -109,23 +109,8 @@ export const portfolioData: PortfolioItemType[] = [
     reversed: true,
   },
   {
-    title: 'Adopt me',
-    index: '05',
-    alt: 'Adopt me training project',
-    src: '/images/zixkomix_1100x700.png',
-    tech: 'DEVELOPMENT | REACT | TYPESCRIPT ',
-    description: (
-      <Description>
-        Projekt zpracovaný v rámci React kurzi na Frontend Masters. Mezi použité technologie patří
-        např. Vite, typescript, tailwind.
-      </Description>
-    ),
-    href: 'https://fitnut.cz/',
-    reversed: false,
-  },
-  {
     title: 'Diploma project in architecture',
-    index: '06',
+    index: '05',
     alt: 'Diploma project in architecture',
     src: '/images/diplomka-rez.jpg',
     tech: 'AUTOCAD | RHINO | PHOTOSHOP | INDESIGN',
@@ -143,6 +128,6 @@ export const portfolioData: PortfolioItemType[] = [
       </>
     ),
     href: 'https://docplayer.cz/46566903-Konverze-arealu-radimskeho-mlyna-v-koline-diplomova-prace.html',
-    reversed: true,
+    reversed: false,
   },
 ];

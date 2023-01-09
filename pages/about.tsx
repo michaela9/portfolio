@@ -11,7 +11,7 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-gray-100 px-6 dark:bg-gray-800 dark:text-my-gray-light">
+        <div className="bg-gray-50 px-6 dark:bg-gray-800 dark:text-my-gray-light">
           <About />
         </div>
       </main>

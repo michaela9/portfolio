@@ -26,8 +26,8 @@ export default function PortfolioItem({
   return (
     <div
       className={classnames('grid items-center gap-10', {
-        'grid-cols-[5fr,7fr]': reversed,
-        'grid-cols-[7fr,5fr]': !reversed,
+        'grid-cols-[5fr,6fr]': reversed,
+        'grid-cols-[6fr,5fr]': !reversed,
       })}
     >
       <div

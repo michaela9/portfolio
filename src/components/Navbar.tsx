@@ -11,7 +11,7 @@ interface Props {
 
 export default function Navbar({ darkMode, setDarkMode }: Props) {
   return (
-    <nav className="relative z-20 bg-gray-100 py-10 px-4 dark:bg-gray-800 dark:text-my-gray-light">
+    <nav className="relative z-20 bg-gray-50 py-10 px-4 dark:bg-gray-800 dark:text-my-gray-light">
       <div className="mx-auto flex max-w-7xl justify-between">
         <Link href="/">
           <Logo className="" />
