@@ -7,10 +7,10 @@ import Heading1 from '../components/Heading1';
 export default function About() {
   return (
     <>
-      <div className="mx-auto flex max-w-3xl flex-col gap-10 py-10">
+      <div className="mx-auto flex max-w-3xl flex-col gap-6 py-10 md:gap-10">
         <Heading1>About</Heading1>
         <div className="flex flex-col gap-10">
-          <div className="grid grid-cols-2 items-center gap-6">
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
             <div className="relative">
               <Image
                 src="/images/ja-05.jpg"
@@ -34,8 +34,8 @@ export default function About() {
               </Description>
             </div>
           </div>
-          <div className="grid grid-cols-2 items-center gap-6">
-            <div className="flex flex-col gap-2 text-right">
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+            <div className="order-2 flex flex-col gap-2 md:order-1 md:text-right">
               <Description>
                 <CustomLink href="https://reactgirls.com/" target="blank" type="secondary">
                   ReactGirls
@@ -52,6 +52,7 @@ export default function About() {
                 href="https://www.youtube.com/watch?v=3WyvP10ZWmQ&t=1263s"
                 target="blank"
                 type="secondary"
+                className="text-sm md:text-base"
               >
                 Work on travels lecture
               </CustomLink>
@@ -59,11 +60,12 @@ export default function About() {
                 href="https://reactgirls.medium.com/pr%C3%A1ce-react-v%C3%BDvoj%C3%A1%C5%99ky-z-dod%C3%A1vky-po-mentoringu-jsem-za%C4%8Dala-nom%C3%A1dit-a7bb70a82446"
                 type="secondary"
                 target="blank"
+                className="text-sm md:text-base"
               >
                 From an architect to frontend developer
               </CustomLink>
             </div>
-            <div className="relative">
+            <div className="relative order-1 md:order-2">
               <Image
                 src="/images/academy.jpg"
                 alt="Michaela Rudolfová photo"
@@ -72,7 +74,7 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 items-center gap-6">
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
             <div className="relative">
               <Image
                 src="/images/vanlife.jpg"

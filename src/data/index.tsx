@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import Description from '../components/Description';
 
 export const hardSkills: string[] = [
@@ -130,4 +131,37 @@ export const portfolioData: PortfolioItemType[] = [
     href: 'https://docplayer.cz/46566903-Konverze-arealu-radimskeho-mlyna-v-koline-diplomova-prace.html',
     reversed: false,
   },
+];
+
+type NavLink = {
+  id: number;
+  title: string | ReactElement;
+  href: string;
+};
+export const navigation: NavLink[] = [
+  { id: 1, title: 'Home', href: '/' },
+  { id: 2, title: 'About', href: '/about' },
+  { id: 3, title: 'Contact', href: '/contact' },
+  // {
+  //   id: 4,
+  //   title: (
+  //     <BsLinkedin
+  //       size={'1.5rem'}
+  //       className="transition-transform duration-150 ease-in-out hover:scale-125"
+  //     />
+  //   ),
+  //   href: 'https://www.linkedin.com/in/michaela-rudolfov%C3%A1-673893185/',
+  //   targetB: true,
+  // },
+  // {
+  //   id: 5,
+  //   title: (
+  //     <BsGithub
+  //       size={'1.7rem'}
+  //       className="transition-transform duration-150 ease-in-out hover:scale-125"
+  //     />
+  //   ),
+  //   href: 'https://github.com/michaela9',
+  //   targetB: true,
+  // },
 ];

@@ -4,5 +4,5 @@ type Props = {
   children: ReactNode;
 };
 export default function Description({ children }: Props) {
-  return <p className="mb-4 font-light">{children}</p>;
+  return <p className="mb-2 text-sm font-light md:mb-4 md:text-base">{children}</p>;
 }

@@ -9,11 +9,11 @@ interface Props {
 
 export default function Portfolio({ portfolioData }: Props) {
   return (
-    <section className="flex flex-col gap-4">
-      <div className="border-b border-cyan-800 py-4">
+    <section className="flex flex-col gap-4 pb-10 md:pb-0">
+      <div className="border-b border-cyan-800 py-2 md:py-4">
         <Heading2>Personal portfolio</Heading2>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-16 md:gap-6">
         {portfolioData.map((item) => (
           <PortfolioItem
             key={item.index}

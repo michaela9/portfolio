@@ -9,14 +9,14 @@ import Heading4 from '../components/Heading4';
 export default function Contact() {
   return (
     <>
-      <div className="mx-auto flex max-w-3xl flex-col gap-10 py-10">
+      <div className="mx-auto flex max-w-3xl flex-col gap-6 py-10 md:gap-10">
         <Heading1>Contact</Heading1>
         <div className="l">
-          <div className="flex items-center gap-10">
+          <div className="flex flex-col items-center gap-6 md:flex-row md:gap-10">
             <img
               src="/images/ja-01.jpg"
               alt="Michaela Rudolfová photo"
-              className="h-full w-1/2 object-cover"
+              className="h-full object-cover md:w-1/2"
             />
             <div className="flex flex-col gap-3">
               <Heading4>Contact me.</Heading4>
@@ -35,14 +35,6 @@ export default function Contact() {
                     size={'1.5rem'}
                     className="transition-transform duration-150 ease-in-out hover:scale-125"
                   />
-                </CustomLink>
-                <CustomLink
-                  href="/images/resume.pdf"
-                  target="blank"
-                  type="secondary"
-                  rel="noopener noreferrer"
-                >
-                  Download Resume
                 </CustomLink>
               </div>
             </div>
