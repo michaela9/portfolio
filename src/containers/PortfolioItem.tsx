@@ -30,18 +30,19 @@ export default function PortfolioItem({
         'grid-cols-1 md:grid-cols-[6fr,5fr]': !reversed,
       })}
     >
-      <div
+      <CustomLink
+        href={href}
+        type="unstyled"
+        target="blank"
         className={classnames('flex flex-col gap-3', {
           'md:order-2': reversed,
           'md:order-1': !reversed,
         })}
       >
-        <CustomLink href={href} type="unstyled" target="blank">
-          <div className="relative h-full w-full transition-all duration-200 ease-in-out hover:scale-105">
-            <Image src={src} alt={alt} width={1200} height={850} />
-          </div>
-        </CustomLink>
-      </div>
+        <div className="relative h-full w-full transition-all duration-200 ease-in-out hover:scale-105">
+          <Image src={src} alt={alt} width={1200} height={850} />
+        </div>
+      </CustomLink>
       <div
         className={classnames('flex flex-col gap-4', {
           'md:order-1 md:items-end md:text-right': reversed,
@@ -59,7 +60,7 @@ export default function PortfolioItem({
           {description}
         </div>
         <CustomLink href={href} target="blank" type="primary">
-          Přejít na web
+          Go to website
         </CustomLink>
       </div>
     </div>

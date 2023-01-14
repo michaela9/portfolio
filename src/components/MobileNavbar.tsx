@@ -42,7 +42,7 @@ export default function MobileNavbar({ darkMode, setDarkMode }: Props) {
               </div>
             </Menu.Item>
             <div className="relative">
-              <ul className="relative flex h-screen flex-col items-center justify-center gap-8 bg-gray-50 py-16 uppercase dark:bg-gray-800">
+              <div className="relative flex h-screen flex-col items-center justify-center gap-8 bg-gray-50 py-16 uppercase dark:bg-gray-800">
                 {navigation.map((item) => (
                   <Menu.Item key={item.id}>
                     <CustomLink href={item.href} type="secondary">
@@ -90,7 +90,7 @@ export default function MobileNavbar({ darkMode, setDarkMode }: Props) {
                     Resume
                   </CustomLink>
                 </Menu.Item>
-              </ul>
+              </div>
             </div>
           </div>
         </Menu.Items>
