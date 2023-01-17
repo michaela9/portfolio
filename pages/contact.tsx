@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Contact from '../src/containers/Contact';
-import HomePage from '../src/containers/HomePage';
 
 export default function ContactPage() {
   return (
@@ -12,7 +11,7 @@ export default function ContactPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-gray-100 px-6 dark:bg-gray-800 dark:text-my-gray-light">
+        <div className="bg-gray-50 px-4 dark:bg-gray-800 dark:text-my-gray-light md:px-6">
           <Contact />
         </div>
       </main>

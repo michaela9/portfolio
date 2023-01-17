@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-type Props = {
+type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
 };
 export default function Button({ children, ...rest }: Props) {

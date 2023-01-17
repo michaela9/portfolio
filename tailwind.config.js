@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
+      gridTemplateColumns: {
+        keyboard: 'repeat(auto-fit, minmax(50px, 1fr))',
+      },
       colors: {
         'my-green': '#3EB66A',
         'my-gray-text-light': '#898989',

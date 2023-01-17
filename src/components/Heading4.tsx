@@ -7,5 +7,9 @@ type Props = React.HTMLAttributes<'h4'> & {
 };
 
 export default function Heading4({ children, className }: Props) {
-  return <h4 className={classnames(className, 'font-montserrat text-xl font-bold')}>{children}</h4>;
+  return (
+    <h4 className={classnames(className, 'font-montserrat text-lg font-bold md:text-xl')}>
+      {children}
+    </h4>
+  );
 }

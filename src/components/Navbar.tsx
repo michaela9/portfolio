@@ -1,8 +1,11 @@
 import Link from 'next/link';
-import React, { Dispatch, SetStateAction, useContext } from 'react';
-import { BsLinkedin, BsFillMoonStarsFill, BsGithub } from 'react-icons/bs';
+import { useRouter } from 'next/router';
+import React, { Dispatch, SetStateAction } from 'react';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { navigation } from '../data';
 import CustomLink from './CustomLink';
 import Logo from './Logo';
+import Social from './Social';
 
 interface Props {
   darkMode: boolean;
@@ -10,67 +13,36 @@ interface Props {
 }
 
 export default function Navbar({ darkMode, setDarkMode }: Props) {
+  const router = useRouter();
+  const routerPathname = router.pathname;
   return (
-    <nav className="relative z-20 bg-gray-100 py-10 px-4 dark:bg-gray-800 dark:text-my-gray-light">
+    <nav className="relative z-20 hidden bg-gray-50 py-10 px-4 dark:bg-gray-800 dark:text-my-gray-light md:block">
       <div className="mx-auto flex max-w-7xl justify-between">
         <Link href="/">
           <Logo className="" />
         </Link>
-        <ul className="relative flex items-center gap-10">
-          <li>
-            <CustomLink href="/" type="secondary">
-              Home
-            </CustomLink>
-          </li>
-          <li>
-            <CustomLink href="/about" type="secondary">
-              About
-            </CustomLink>
-          </li>
-          <li>
-            <CustomLink href="/contact" type="secondary">
-              Contact
-            </CustomLink>
-          </li>
-          <li>
+        <div className="relative flex items-center gap-10">
+          {navigation.map((item) => (
             <CustomLink
-              href="https://www.linkedin.com/in/michaela-rudolfov%C3%A1-673893185/"
-              target="blank"
+              key={item.id}
+              href={item.href}
+              type="secondary"
+              comparison={item.href === routerPathname}
             >
-              <BsLinkedin
-                size={'1.5rem'}
-                className="transition-transform duration-150 ease-in-out hover:scale-125"
-              />
+              {item.title}
             </CustomLink>
-          </li>
-          <li>
-            <CustomLink href="https://github.com/michaela9" target="blank">
-              <BsGithub
-                size={'1.7rem'}
-                className="transition-transform duration-150 ease-in-out hover:scale-125"
-              />
-            </CustomLink>
-          </li>
-          <li>
-            <button onClick={() => setDarkMode(!darkMode)}>
-              <BsFillMoonStarsFill
-                size={'1.5rem'}
-                className="transition-transform duration-150 ease-in-out hover:scale-125"
-              />
-            </button>
-          </li>
-          <li>
-            <CustomLink
-              href="/images/resume.pdf"
-              target="blank"
-              type="primary"
-              rel="noopener noreferrer"
-              className="inline-block hover:scale-105"
-            >
-              Resume
-            </CustomLink>
-          </li>
-        </ul>
+          ))}
+          <Social darkMode={darkMode} setDarkMode={setDarkMode} />
+          <CustomLink
+            href="/images/resume.pdf"
+            target="blank"
+            type="primary"
+            rel="noopener noreferrer"
+            className="inline-block hover:scale-105"
+          >
+            Resume
+          </CustomLink>
+        </div>
       </div>
     </nav>
   );

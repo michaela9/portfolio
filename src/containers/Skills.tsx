@@ -1,40 +1,42 @@
 import React from 'react';
 import { GiPikeman, GiSwordwoman } from 'react-icons/gi';
 import Heading3 from '../components/Heading3';
-import SkillsWrapper from '../components/SkillsWrapper';
+import SkillsHeadingWrapper from '../components/SkillsHeadingWrapper';
+import SkillsInnerWrapper from '../components/SkillsInnerWrapper';
+import SkillsOuterWrapper from '../components/SkillsOuterWrapper';
+import SkillsWrapper from '../components/SkillsOuterWrapper';
 import SkillItem from './SkillItem';
 
 interface Props {
   hardSkills: string[];
   softSkills: string[];
 }
+
 export default function Skills({ hardSkills, softSkills }: Props) {
   return (
-    <section className="w-full py-20">
-      <div className="grid grid-cols-2 gap-10">
-        <SkillsWrapper>
-          <div className="mb-3 flex items-center gap-2">
-            <GiSwordwoman size={'3rem'} />
-            <Heading3>Hard Skills</Heading3>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {hardSkills.map((item, i) => (
-              <SkillItem key={i}>{item}</SkillItem>
-            ))}
-          </div>
-        </SkillsWrapper>
-        <SkillsWrapper>
-          <div className="mb-3 flex items-center gap-2">
-            <GiPikeman size={'3rem'} />
-            <Heading3>Soft Skills</Heading3>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {softSkills.map((item, i) => (
-              <SkillItem key={i}>{item}</SkillItem>
-            ))}
-          </div>
-        </SkillsWrapper>
-      </div>
+    <section className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-10 md:py-20">
+      <SkillsOuterWrapper>
+        <SkillsHeadingWrapper>
+          <GiSwordwoman size={'3rem'} />
+          <Heading3>Hard Skills</Heading3>
+        </SkillsHeadingWrapper>
+        <SkillsInnerWrapper>
+          {hardSkills.map((item, i) => (
+            <SkillItem key={i}>{item}</SkillItem>
+          ))}
+        </SkillsInnerWrapper>
+      </SkillsOuterWrapper>
+      <SkillsWrapper>
+        <SkillsHeadingWrapper>
+          <GiPikeman size={'3rem'} />
+          <Heading3>Soft Skills</Heading3>
+        </SkillsHeadingWrapper>
+        <SkillsInnerWrapper>
+          {softSkills.map((item, i) => (
+            <SkillItem key={i}>{item}</SkillItem>
+          ))}
+        </SkillsInnerWrapper>
+      </SkillsWrapper>
     </section>
   );
 }

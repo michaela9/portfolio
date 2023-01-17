@@ -1,6 +1,23 @@
 import { ReactElement } from 'react';
 import Description from '../components/Description';
 
+export type PortfolioItemType = {
+  title: string;
+  index: string;
+  alt: string;
+  src: string;
+  tech: string;
+  description: ReactElement;
+  href: string;
+  reversed?: boolean;
+};
+
+type NavLink = {
+  id: number;
+  title: string | ReactElement;
+  href: string;
+};
+
 export const hardSkills: string[] = [
   'HTML',
   'CSS',
@@ -24,19 +41,9 @@ export const softSkills: string[] = [
   'Independence',
   'Desire to learn new skills',
   'Diligence',
-  'Open mind',
+  'Open-mindedness',
 ];
 
-export type PortfolioItemType = {
-  title: string;
-  index: string;
-  alt: string;
-  src: string;
-  tech: string;
-  description: ReactElement;
-  href: string;
-  reversed?: boolean;
-};
 export const portfolioData: PortfolioItemType[] = [
   {
     title: 'ZIX KOMIX',
@@ -47,11 +54,13 @@ export const portfolioData: PortfolioItemType[] = [
     description: (
       <>
         <Description>
-          Projekt vytvořený na podporu krásného produktu a to první discgolfové příručky v Čechách.
+          I developed a website to support a unique product, the first disc golf guide in the Czech
+          Republic.
         </Description>
         <Description>
-          Na webu jsou použity ilustrace z knihy a celé je to doplněné podporující grafikou. Web byl
-          navržen ve Figmě a vytvořen pomocí Webflow.
+          The main motif of the website includes illustrations from the book combined with suitable
+          colors and enjoyable background animations. I developed the website using Figma and
+          Webflow.
         </Description>
       </>
     ),
@@ -62,12 +71,13 @@ export const portfolioData: PortfolioItemType[] = [
     title: 'Vítr do plachet pro Eleonorku',
     index: '02',
     alt: 'Vítr do plachet pro Eleonorku',
-    src: '/images/zixkomix_1100x700.png',
+    src: '/images/eleonorka_1100.jpg',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
     description: (
       <Description>
-        Dobrovolnický projekt vytvořený na podporu malé Eleonorky diagnostikované onemocněním SMA.
-        Projekt byl vytvořen pomocí nástroje Webflow.
+        I created a volunteer project to support Eleonorka, a little girl diagnosed with Spinal
+        Muscular Atrophy (SMA) disease. I built the project using Figma and Webflow, with a content
+        management system for blog posts.
       </Description>
     ),
     href: 'https://vitrdoplachetproeleonorku.cz/',
@@ -82,11 +92,13 @@ export const portfolioData: PortfolioItemType[] = [
     description: (
       <>
         <Description>
-          Projekt vznikl během mé účasti na mentoringovém programu komunity ReactGirls.
+          I developed my first website as part of a mentoring program with ReactGirls. Under the
+          guidance of my mentor, I created the project in Figma and React over the course of 3
+          months.
         </Description>
         <Description>
-          Pod vedení mentora jsem samostatně zpracovala projekt od návrhu designu ve Figmě po
-          development v Reactu.
+          Besides learning how to code and design I learned how to use Git and GitHub and how to
+          find the right information in the official docs.
         </Description>
       </>
     ),
@@ -101,48 +113,39 @@ export const portfolioData: PortfolioItemType[] = [
     tech: 'DESIGN | DEVELOPMENT ',
     description: (
       <Description>
-        Projekt zpracovaný pro město Kutná Hora k podzimní akci Hornická města včetně přihlašovacího
-        formuláře.
+        I developed a project for the City of Kutná Hora for the Autumn Mining Cities event, which
+        included an application form.
       </Description>
     ),
     href: 'https://hornickamesta.kutnahora.cz/',
     reversed: true,
   },
   {
-    title: 'Adopt me',
-    index: '05',
-    alt: 'Adopt me training project',
-    src: '/images/zixkomix_1100x700.png',
-    tech: 'DEVELOPMENT | REACT | TYPESCRIPT ',
-    description: (
-      <Description>
-        Projekt zpracovaný v rámci React kurzi na Frontend Masters. Mezi použité technologie patří
-        např. Vite, typescript, tailwind.
-      </Description>
-    ),
-    href: 'https://fitnut.cz/',
-    reversed: false,
-  },
-  {
     title: 'Diploma project in architecture',
-    index: '06',
+    index: '05',
     alt: 'Diploma project in architecture',
     src: '/images/diplomka-rez.jpg',
     tech: 'AUTOCAD | RHINO | PHOTOSHOP | INDESIGN',
     description: (
       <>
         <Description>
-          Jako diplomní projekt na Fakultě architektury ČVUT jsem zpracovávala studii na téma
-          Konverze Radimského mlýnu v Kolíně.
+          For my diploma project at the Faculty of Architecture of the CTU, I prepared a study on
+          the rehabilitation of the Radimský Mill in Kolín.
         </Description>
         <Description>
-          Cílem bylo rehabilitovat oblast pro novou kreativní funkci. Hlavním oživením objektu byla
-          navržena coworkingová funkce společných a samostatných pracovišť. Součástí areálu byla
-          navržena galerie, obytná a ubytovací funkce.
+          My goal was to restore the area for a new creative purpose such as a new coworking space
+          with shared and separate workplaces and gallery. I designed additional features, such as
+          residential and accommodation spaces and the surrounding public space.
         </Description>
       </>
     ),
     href: 'https://docplayer.cz/46566903-Konverze-arealu-radimskeho-mlyna-v-koline-diplomova-prace.html',
-    reversed: true,
+    reversed: false,
   },
+];
+
+export const navigation: NavLink[] = [
+  { id: 1, title: 'Home', href: '/' },
+  { id: 2, title: 'About', href: '/about' },
+  { id: 3, title: 'Contact', href: '/contact' },
 ];

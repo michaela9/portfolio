@@ -6,5 +6,6 @@
   html {
     @apply font-montserrat;
     @apply text-my-gray-text-dark;
+    @apply scroll-smooth;
   }
 }

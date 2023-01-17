@@ -11,7 +11,7 @@ export default function Heading3({ children, className }: Props) {
     <h3
       className={classnames(
         className,
-        'font-montserrat text-4xl font-bold leading-10  text-cyan-800 dark:text-white'
+        'font-montserrat text-2xl font-bold text-cyan-800  dark:text-white md:text-4xl'
       )}
     >
       {children}
