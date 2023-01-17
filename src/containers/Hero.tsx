@@ -7,7 +7,7 @@ import Heading4 from '../components/Heading4';
 
 export default function Hero() {
   return (
-    <section className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
+    <section className="relative grid grid-cols-1 items-start gap-8 md:grid-cols-2">
       <div className="flex flex-col gap-3 py-8 md:gap-4 md:py-20">
         <div>
           <Heading1>
@@ -16,6 +16,13 @@ export default function Hero() {
           </Heading1>
           <Heading4>Frontend Developer based in Prague</Heading4>
         </div>
+        <CustomLink
+          href="/game"
+          type="tertiary"
+          className="absolute top-0 right-20 z-30 flex items-center justify-center bg-red-400 text-xs font-black"
+        >
+          Play a game
+        </CustomLink>
         <img
           src="/images/profil_800x711.png"
           alt="profil-photo"

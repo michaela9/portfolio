@@ -79,8 +79,9 @@ export default function Game() {
               {isWinner && 'Winner!! Refresh if you want to try again.'}
               {isLoser && 'Nice try!! Refresh if you want to try again.'}
             </div>
-            {isWinner ||
-              (isLoser && <Button onClick={() => window.location.reload()}>Play again</Button>)}
+            {isWinner || isLoser ? (
+              <Button onClick={() => window.location.reload()}>Play again</Button>
+            ) : null}
           </div>
           <Keyboard
             disabled={isWinner || isLoser}
