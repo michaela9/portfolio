@@ -14,23 +14,18 @@ export default function HangmanWord({
 }: HangmanWordProps) {
   return (
     <div className="flex gap-4 font-mono text-7xl font-bold uppercase">
-      {wordToGuess.split('').map((letter, index) => {
-        const isGuessed = guessedLetters.includes(letter) || reveal;
-        return (
-          <span key={index} className="border-b-8 border-my-gray-text-dark ">
-            <span
-              className={classnames(
-                isGuessed ? 'block' : 'hidden',
-                guessedLetters.includes(letter) && reveal
-                  ? 'text-red-500'
-                  : 'text-my-gray-text-dark'
-              )}
-            >
-              {letter}
-            </span>
-          </span>
-        );
-      })}
+      {wordToGuess.split('').map((letter, index) => (
+        <div className="border-b-8 border-my-gray-text-dark" key={index}>
+          <div
+            className={classnames(
+              !guessedLetters.includes(letter) && reveal ? 'text-red-500' : 'text-black',
+              guessedLetters.includes(letter) || reveal ? 'visible' : 'invisible'
+            )}
+          >
+            {letter}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

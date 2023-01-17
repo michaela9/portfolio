@@ -11,7 +11,7 @@ module.exports = {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
       gridTemplateColumns: {
-        keyboard: 'repeat(auto-fit, minmax(75px, 1fr))',
+        keyboard: 'repeat(auto-fit, minmax(50px, 1fr))',
       },
       colors: {
         'my-green': '#3EB66A',

@@ -44,7 +44,7 @@ export default function Keyboard({
   disabled = false,
 }: KeyboardProps) {
   return (
-    <div className="grid grid-cols-keyboard gap-4">
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(35px,1fr))] gap-2 pb-10 md:grid-cols-[repeat(auto-fit,minmax(58px,1fr))] md:gap-3">
       {KEYS.map((key) => {
         const isActive = activeLetters.includes(key);
         const isInActive = inActiveLetters.includes(key);
@@ -52,7 +52,7 @@ export default function Keyboard({
           <button
             onClick={() => addGuessedLetter(key)}
             className={classnames(
-              'aspect-square w-full border-4 border-my-gray-text-dark bg-gray-200 p-2 text-4xl font-bold uppercase',
+              'aspect-square w-full border-4 border-my-gray-text-dark bg-gray-200 p-1 text-xl font-bold uppercase md:p-2 md:text-4xl',
               {
                 'cursor-pointer hover:bg-cyan-200 focus:bg-cyan-200 active:bg-gray-400': isActive,
                 'opacity-30': isInActive,

@@ -1,4 +1,6 @@
+import classnames from 'classnames';
 import React, { useCallback, useEffect, useState } from 'react';
+import Button from '../../components/Button';
 import words from '../../data/wordList.json';
 import HangmanDrawing from './HangmanDrawing';
 import HangmanWord from './HangmanWord';
@@ -60,20 +62,33 @@ export default function Game() {
   }, []);
 
   return (
-    <div className="mx-auto flex max-w-[800px] flex-col items-center gap-8">
-      <div className="font-lg text-center ">
-        {isWinner && 'Winner!! Refresh if you want to try again.'}
-        {isLoser && 'Nice try!! Refresh if you want to try again.'}
-      </div>
-      <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
-      <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
-      <div className="self-stretch">
-        <Keyboard
-          disabled={isWinner || isLoser}
-          activeLetters={activeLetters}
-          inActiveLetters={incorrectLetters}
-          addGuessedLetter={addGuessedLetter}
-        />
+    <div className="mx-auto flex max-w-[1000px] flex-col gap-8">
+      <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-2">
+        <div className="flex flex-col items-center gap-4">
+          <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
+          <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
+        </div>
+        <div className="flex flex-col gap-4">
+          <div
+            className={classnames('text-center text-2xl font-bold', {
+              'text-my-green': isWinner,
+              'text-red-500': isLoser,
+            })}
+          >
+            <div className="mb-4">
+              {isWinner && 'Winner!! Refresh if you want to try again.'}
+              {isLoser && 'Nice try!! Refresh if you want to try again.'}
+            </div>
+            {isWinner ||
+              (isLoser && <Button onClick={() => window.location.reload()}>Play again</Button>)}
+          </div>
+          <Keyboard
+            disabled={isWinner || isLoser}
+            activeLetters={activeLetters}
+            inActiveLetters={incorrectLetters}
+            addGuessedLetter={addGuessedLetter}
+          />
+        </div>
       </div>
     </div>
   );
