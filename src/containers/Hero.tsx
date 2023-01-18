@@ -23,7 +23,7 @@ export default function Hero() {
         >
           Play a game
         </CustomLink>
-        <div className="flex w-full justify-center bg-white pt-4 dark:bg-slate-900 lg:hidden">
+        <div className="flex w-full justify-center bg-slate-100 pt-4 dark:bg-slate-900 lg:hidden">
           <Image src="/images/profil_800x711.png" alt="profil-photo" width={600} height={600} />
         </div>
         <Description>
