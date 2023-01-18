@@ -26,20 +26,22 @@ export default function Hero() {
         <div className="flex w-full justify-center bg-slate-100 pt-4 dark:bg-slate-900 lg:hidden">
           <Image src="/images/profil_800x711.png" alt="profil-photo" width={600} height={600} />
         </div>
-        <Description>
-          I graduated as an architect from CTU Prague, but a few years later I found my way to
-          Frontend Development. I take great pleasure in creating, learning and being part of an IT
-          community.
-        </Description>
-        <Description>
-          Since the beginning of my career change, I have been an active participant in the
-          ReactGirls community.
-        </Description>
-        <Description>
-          Currently, I am interested in exploring React, Typescript, Tailwind and GraphQL
-          technologies, but I am open to learning new technologies. In the future I am not afraid of
-          more full-stack and backend technologies.
-        </Description>
+        <div>
+          <Description>
+            I graduated as an architect from CTU Prague, but a few years later I found my way to
+            Frontend Development. I take great pleasure in creating, learning and being part of an
+            IT community.
+          </Description>
+          <Description>
+            Since the beginning of my career change, I have been an active participant in the
+            ReactGirls community.
+          </Description>
+          <Description>
+            Currently, I am interested in exploring React, Typescript, Tailwind and GraphQL
+            technologies, but I am open to learning new technologies. In the future I am not afraid
+            of more full-stack and backend technologies.
+          </Description>
+        </div>
         <CustomLink href="/contact" type="tertiary">
           Write me
         </CustomLink>
