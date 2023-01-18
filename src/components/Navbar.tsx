@@ -34,7 +34,7 @@ export default function Navbar({ darkMode, setDarkMode }: Props) {
           ))}
           <Social darkMode={darkMode} setDarkMode={setDarkMode} />
           <CustomLink
-            href="/images/resume.pdf"
+            href="/images/cv_rudolfova_2023.pdf"
             target="blank"
             type="primary"
             rel="noopener noreferrer"

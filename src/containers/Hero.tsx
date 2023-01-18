@@ -7,8 +7,8 @@ import Heading4 from '../components/Heading4';
 
 export default function Hero() {
   return (
-    <section className="relative grid grid-cols-1 items-start gap-8 md:grid-cols-2">
-      <div className="flex flex-col gap-3 py-8 md:gap-4 md:py-20">
+    <section className="relative grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+      <div className="flex flex-col gap-3 py-16 md:gap-4 md:py-20">
         <div>
           <Heading1>
             Hi, I am <br />
@@ -19,15 +19,13 @@ export default function Hero() {
         <CustomLink
           href="/game"
           type="tertiary"
-          className="absolute top-0 right-20 z-30 flex items-center justify-center bg-red-400 text-xs font-black"
+          className="absolute right-8 -top-10 z-30 flex -rotate-45 items-center justify-center bg-red-400 text-xs font-black dark:bg-red-500 sm:top-10"
         >
           Play a game
         </CustomLink>
-        <img
-          src="/images/profil_800x711.png"
-          alt="profil-photo"
-          className="relative w-full bg-slate-100 pt-4 dark:bg-slate-900 md:hidden"
-        />
+        <div className="flex w-full justify-center bg-white pt-4 dark:bg-slate-900 lg:hidden">
+          <Image src="/images/profil_800x711.png" alt="profil-photo" width={600} height={600} />
+        </div>
         <Description>
           I graduated as an architect from CTU Prague, but a few years later I found my way to
           Frontend Development. I take great pleasure in creating, learning and being part of an IT
@@ -46,11 +44,9 @@ export default function Hero() {
           Write me
         </CustomLink>
       </div>
-      <img
-        src="/images/profil_800x711.png"
-        alt="profil-photo"
-        className="relative hidden w-full md:block"
-      />
+      <div className="hidden w-full bg-slate-100 pt-4 dark:bg-slate-900 lg:block">
+        <Image src="/images/profil_800x711.png" alt="profil-photo" width={600} height={600} />
+      </div>
     </section>
   );
 }

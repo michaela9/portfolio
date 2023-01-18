@@ -7,11 +7,11 @@ import Logo from './Logo';
 export default function Footer() {
   return (
     <footer className="px-4 dark:bg-gray-800 dark:text-my-gray-light">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-end gap-6 pb-4 md:grid-cols-3 md:gap-0 md:pb-10">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-end gap-3 pb-4 md:grid-cols-3 md:gap-0 md:pb-10 lg:gap-6">
         <CustomLink href="/contact" type="tertiary">
           Write me
         </CustomLink>
-        <div className="flex flex-col items-center gap-4 pt-6 md:pt-20">
+        <div className="flex flex-col items-center gap-4 pt-2 md:pt-20">
           <Link href="/">
             <Logo className="" />
           </Link>
@@ -30,7 +30,7 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="https://github.com/michaela9" target="blank">
               <BsGithub
                 size={'1.7rem'}
                 className="transition-transform duration-150 ease-in-out hover:scale-125"
@@ -39,7 +39,7 @@ export default function Footer() {
           </li>
           <li>
             <CustomLink
-              href="/images/resume.pdf"
+              href="/images/cv_rudolfova_2023.pdf"
               target="blank"
               type="secondary"
               rel="noopener noreferrer"
