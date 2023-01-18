@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section className="mx-auto flex max-w-3xl flex-col gap-6 py-10 md:gap-10">
       <Heading1>About</Heading1>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 md:gap-20">
         <AboutGridWrapper>
           <Image src="/images/ja-05.jpg" alt="Michaela Rudolfová photo" width={1200} height={850} />
           <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ export default function About() {
               &quot;Work on Travels&quot; at one of the meetups.
             </Description>
             <CustomLink
-              href="https://www.youtube.com/watch?v=3WyvP10ZWmQ&t=1263s"
+              href="https://www.youtube.com/watch?v=3WyvP10ZWmQ"
               target="blank"
               type="secondary"
               className="text-sm md:text-base"

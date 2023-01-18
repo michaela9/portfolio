@@ -11,7 +11,7 @@ export default function ContactPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-gray-50 px-4 dark:bg-gray-800 dark:text-my-gray-light md:px-6">
+        <div className="bg-gray-50 px-6 dark:bg-gray-800 dark:text-my-gray-light">
           <Contact />
         </div>
       </main>

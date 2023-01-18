@@ -62,9 +62,9 @@ export default function Game() {
   }, []);
 
   return (
-    <div className="mx-auto flex max-w-[1000px] flex-col gap-8">
-      <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-2">
-        <div className="flex flex-col items-center gap-4">
+    <div className="flex max-w-[1000px] flex-col gap-8 md:mx-auto">
+      <div className="grid grid-cols-1 items-start justify-start gap-10 md:items-end lg:grid-cols-2">
+        <div className="flex flex-col gap-4 md:items-center">
           <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
           <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
         </div>

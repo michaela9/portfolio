@@ -14,7 +14,7 @@ interface Props {
 
 export default function Skills({ hardSkills, softSkills }: Props) {
   return (
-    <section className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-10 md:py-20">
+    <section className="grid w-full grid-cols-1 gap-10 py-8 md:grid-cols-2 md:gap-10 md:py-20 lg:gap-4">
       <SkillsOuterWrapper>
         <SkillsHeadingWrapper>
           <GiSwordwoman size={'3rem'} />

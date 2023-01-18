@@ -13,12 +13,14 @@ export default function HangmanWord({
   reveal = false,
 }: HangmanWordProps) {
   return (
-    <div className="flex gap-4 font-mono text-5xl font-bold uppercase">
+    <div className="flex gap-2 self-center font-mono text-3xl font-bold uppercase md:gap-4 md:text-5xl">
       {wordToGuess.split('').map((letter, index) => (
         <div className="border-b-8 border-my-gray-text-dark" key={index}>
           <div
             className={classnames(
-              !guessedLetters.includes(letter) && reveal ? 'text-red-500' : 'text-black',
+              !guessedLetters.includes(letter) && reveal
+                ? 'text-red-500'
+                : 'text-black dark:text-white',
               guessedLetters.includes(letter) || reveal ? 'visible' : 'invisible'
             )}
           >
