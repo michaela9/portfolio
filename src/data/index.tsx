@@ -31,6 +31,7 @@ export const hardSkills: string[] = [
   'FIGMA',
   'WEBFLOW',
   'STORYBOOK',
+  'WEB ACCESSIBILITY',
 ];
 
 export const softSkills: string[] = [
