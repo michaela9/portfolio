@@ -11,7 +11,12 @@ export default function About() {
       <Heading1>About</Heading1>
       <div className="flex flex-col gap-10 md:gap-20">
         <AboutGridWrapper>
-          <Image src="/images/ja-05.jpg" alt="Michaela Rudolfová photo" width={1200} height={850} />
+          <Image
+            src="/images/react-academy.jpg"
+            alt="Michaela Rudolfová photo"
+            width={1200}
+            height={850}
+          />
           <div className="flex flex-col gap-2">
             <Description>
               Hello, my name is Michaela Rudolfová and I have been a Frontend Developer for the past
@@ -36,9 +41,9 @@ export default function About() {
               Figma.
             </Description>
             <Description>
-              In addition to regularly participating in meetups, this year I helped with the
-              Javascript and React coaching for the Autumn Academy. I gave a lecture on the topic of
-              &quot;Work on Travels&quot; at one of the meetups.
+              In addition to regularly participating in meetups, this year I was a lecturer at React
+              academy and I helped as a coach with the HTML, CSS and Javascipt Academy. I gave a
+              lecture on the topic of &quot;Work on Travels&quot; at one of the meetups.
             </Description>
             <CustomLink
               href="https://www.youtube.com/watch?v=3WyvP10ZWmQ"

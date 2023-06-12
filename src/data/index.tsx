@@ -107,8 +107,38 @@ export const portfolioData: PortfolioItemType[] = [
     reversed: false,
   },
   {
-    title: 'Hornická města',
+    title: 'PBI Prague',
     index: '04',
+    alt: 'ČT PBI Prague',
+    src: '/images/pbi.jpg',
+    tech: 'DEVELOPMENT | REACT | TYPESCRIPT | STRAPI | TAILWIND',
+    description: (
+      <Description>
+        As a frontend developer I worked on a project for Czech Television. The website was created
+        for the PBI Prague 2023 event.
+      </Description>
+    ),
+    href: 'https://pbi-prague-2023.cz/',
+    reversed: true,
+  },
+  {
+    title: 'FitNut',
+    index: '05',
+    alt: 'FitNut akademie',
+    src: '/images/fitnut.jpg',
+    tech: 'DEVELOPMENT | TYPESCRIPT | STYLED COMPONENTS',
+    description: (
+      <Description>
+        As a frontend developer, I worked on a project for FITNUT Academy that was undergoing a
+        redesign. It was the first project where I came into contact with Typescript.
+      </Description>
+    ),
+    href: 'https://fitnut.cz/',
+    reversed: false,
+  },
+  {
+    title: 'Hornická města',
+    index: '06',
     alt: 'Hornická města projekt',
     src: '/images/hornicka-mesta.jpg',
     tech: 'DESIGN | DEVELOPMENT ',
@@ -123,7 +153,7 @@ export const portfolioData: PortfolioItemType[] = [
   },
   {
     title: 'Diploma project in architecture',
-    index: '05',
+    index: '07',
     alt: 'Diploma project in architecture',
     src: '/images/diplomka-rez.jpg',
     tech: 'AUTOCAD | RHINO | PHOTOSHOP | INDESIGN',
