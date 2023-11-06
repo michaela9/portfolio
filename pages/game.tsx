@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Contact from '../src/containers/Contact';
-import Game from '../src/containers/game/Game';
+import Pexeso from '@/containers/pexeso/Pexeso';
 
 export default function ContactPage() {
   return (
@@ -13,7 +12,7 @@ export default function ContactPage() {
       </Head>
       <main>
         <div className="bg-gray-50 px-6 dark:bg-gray-800 dark:text-my-gray-light">
-          <Game />
+          <Pexeso />
         </div>
       </main>
     </>
