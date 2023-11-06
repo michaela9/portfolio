@@ -10,7 +10,7 @@ type CellT = {
 };
 
 const Pexeso = () => {
-  const [grid, setGrid] = useState(createRandomPexesoGrid());
+  const [grid, setGrid] = useState<string[][]>(createRandomPexesoGrid() as string[][]);
   const [revealedGrid, setRevealedGrid] = useState(gridAllFalse(grid));
   const [previousClick, setPreviousClick] = useState<CellT | undefined>();
   const [isWinning, setIsWinning] = useState(false);
@@ -50,7 +50,7 @@ const Pexeso = () => {
       <PexesoGrid grid={grid} revealedGrid={revealedGrid} handleCardClick={handleCardClick} />
       {isWinning && (
         <Win
-          getRandomGrid={() => setGrid(createRandomPexesoGrid())}
+          getRandomGrid={() => setGrid(createRandomPexesoGrid() as string[][])}
           resetRevealedGrid={() => setRevealedGrid(gridAllFalse(grid))}
           setIsWinning={setIsWinning}
         />

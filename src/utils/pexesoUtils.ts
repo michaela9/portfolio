@@ -2,7 +2,7 @@ export function getImagePath(imageNumber: number) {
   return `/images/pexeso/turecko-${imageNumber}.jpg`;
 }
 
-export function shuffleArray(array) {
+export function shuffleArray(array: string[] | string[][]) {
   return array.slice().sort(() => Math.random() - 0.5);
 }
 
@@ -12,7 +12,9 @@ export function createRandomPexesoGrid() {
 
   const splicedGrid = Array.from({ length: 4 }, () => shuffledImages.splice(0, 4));
 
-  return shuffleArray(splicedGrid);
+  const shuffledGrid = shuffleArray(splicedGrid as string[][]);
+
+  return shuffleArray(shuffledGrid);
 }
 
 export function gridAllFalse(grid: string[][]) {
