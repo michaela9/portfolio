@@ -1,3 +1,5 @@
+import Button from '@/components/Button';
+import Description from '@/components/Description';
 import { Dispatch, SetStateAction } from 'react';
 
 type Props = {
@@ -8,10 +10,9 @@ type Props = {
 
 const Win = ({ getRandomGrid, resetRevealedGrid, setIsWinning }: Props) => {
   return (
-    <div className="space-y-4">
-      <p>You have won!!!</p>
-      <button
-        className="rounded-md border border-indigo-700 bg-indigo-50 px-4 py-2 text-indigo-700 hover:bg-indigo-100"
+    <div className="flex flex-col gap-4">
+      <p className="text-lg font-bold md:text-3xl">You have won!!!</p>
+      <Button
         onClick={() => {
           getRandomGrid();
           resetRevealedGrid();
@@ -19,7 +20,7 @@ const Win = ({ getRandomGrid, resetRevealedGrid, setIsWinning }: Props) => {
         }}
       >
         Play again
-      </button>
+      </Button>
     </div>
   );
 };

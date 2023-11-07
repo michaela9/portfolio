@@ -8,9 +8,9 @@ type Props = {
 
 const PexesoGrid = ({ grid, handleCardClick, revealedGrid }: Props) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-2 md:gap-4">
       {grid.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex gap-4">
+        <div key={rowIndex} className="flex gap-2 md:gap-4">
           {row.map((col, colIndex) => {
             const isRevealed = revealedGrid[rowIndex][colIndex];
 
@@ -18,9 +18,12 @@ const PexesoGrid = ({ grid, handleCardClick, revealedGrid }: Props) => {
               <button
                 onClick={() => handleCardClick(rowIndex, colIndex)}
                 disabled={isRevealed}
-                className={clsxm('flex h-36 w-36 items-center justify-center hover:bg-indigo-50', {
-                  'hover:bg-inherit': isRevealed,
-                })}
+                className={clsxm(
+                  'flex h-20 w-20 items-center justify-center hover:bg-indigo-50 md:h-36 md:w-36',
+                  {
+                    'hover:bg-inherit': isRevealed,
+                  }
+                )}
                 key={colIndex}
               >
                 {isRevealed ? (

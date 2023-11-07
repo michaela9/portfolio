@@ -46,7 +46,7 @@ const Pexeso = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-10">
+    <div className="gap-4s flex flex-col items-center justify-center py-10">
       <PexesoGrid grid={grid} revealedGrid={revealedGrid} handleCardClick={handleCardClick} />
       {isWinning && (
         <Win
