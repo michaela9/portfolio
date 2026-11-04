@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+
 import Description from '../components/Description';
 
 export type PortfolioItemType = {
@@ -47,8 +48,47 @@ export const softSkills: string[] = [
 
 export const portfolioData: PortfolioItemType[] = [
   {
-    title: 'ZIX KOMIX',
+    title: 'Vyhořelí architekti',
     index: '01',
+    alt: 'Vyhořelí architekti project',
+    src: '/images/vyhoreli-architekti_1000x596.png',
+    tech: 'DESIGN | DEVELOPMENT | STRIPE',
+    description: (
+      <>
+        <Description>
+          This was a really fun project! A website for selling “Burnt-Out Architects”, a humorous
+          card game.
+        </Description>
+        <Description>
+          The brief was to create a minimalist yet playful website that reflects the visual identity
+          and graphics of the game. Payments are seamlessly handled through Stripe.
+        </Description>
+      </>
+    ),
+    href: 'https://www.vyhoreliarchitekti.cz/',
+    reversed: false,
+  },
+  {
+    title: 'KOMPONENT STUDIO',
+    index: '02',
+    alt: 'KOMPONENT STUDIO project',
+    src: '/images/komponent_1000x567.png',
+    tech: 'DESIGN | DEVELOPMENT | SANITY',
+    description: (
+      <>
+        <Description>
+          The website for the architecture studio was designed to support business growth, attract
+          new clients, and provide a clear and intuitive CMS that allows the team to easily manage
+          and add new projects.
+        </Description>
+      </>
+    ),
+    href: 'https://www.komponentstudio.cz/',
+    reversed: true,
+  },
+  {
+    title: 'ZIX KOMIX',
+    index: '03',
     alt: 'ZIX KOMIX project',
     src: '/images/zixkomix_1100x700.png',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
@@ -70,7 +110,7 @@ export const portfolioData: PortfolioItemType[] = [
   },
   {
     title: 'Vítr do plachet pro Eleonorku',
-    index: '02',
+    index: '04',
     alt: 'Vítr do plachet pro Eleonorku',
     src: '/images/eleonorka_1100.jpg',
     tech: 'DESIGN | DEVELOPMENT | WEBFLOW',
@@ -83,95 +123,6 @@ export const portfolioData: PortfolioItemType[] = [
     ),
     href: 'https://vitrdoplachetproeleonorku.cz/',
     reversed: true,
-  },
-  {
-    title: 'REACTGIRLS',
-    index: '03',
-    alt: 'ReactGirls project',
-    src: '/images/mobile-reactgirls.png',
-    tech: 'DESIGN | DEVELOPMENT | REACT',
-    description: (
-      <>
-        <Description>
-          I developed my first website as part of a mentoring program with ReactGirls. Under the
-          guidance of my mentor, I created the project in Figma and React over the course of 3
-          months.
-        </Description>
-        <Description>
-          Besides learning how to code and design I learned how to use Git and GitHub and how to
-          find the right information in the official docs.
-        </Description>
-      </>
-    ),
-    href: 'https://reactgirls.com/',
-    reversed: false,
-  },
-  {
-    title: 'PBI Prague',
-    index: '04',
-    alt: 'ČT PBI Prague',
-    src: '/images/pbi.jpg',
-    tech: 'DEVELOPMENT | REACT | TYPESCRIPT | STRAPI | TAILWIND',
-    description: (
-      <Description>
-        As a frontend developer I worked on a project for Czech Television. The website was created
-        for the PBI Prague 2023 event.
-      </Description>
-    ),
-    href: 'https://pbi-prague-2023.cz/',
-    reversed: true,
-  },
-  {
-    title: 'FitNut',
-    index: '05',
-    alt: 'FitNut akademie',
-    src: '/images/fitnut.jpg',
-    tech: 'DEVELOPMENT | TYPESCRIPT | STYLED COMPONENTS',
-    description: (
-      <Description>
-        As a frontend developer, I worked on a project for FITNUT Academy that was undergoing a
-        redesign. It was the first project where I came into contact with Typescript.
-      </Description>
-    ),
-    href: 'https://fitnut.cz/',
-    reversed: false,
-  },
-  {
-    title: 'Hornická města',
-    index: '06',
-    alt: 'Hornická města projekt',
-    src: '/images/hornicka-mesta.jpg',
-    tech: 'DESIGN | DEVELOPMENT ',
-    description: (
-      <Description>
-        I developed a project for the City of Kutná Hora for the Autumn Mining Cities event, which
-        included an application form.
-      </Description>
-    ),
-    href: 'https://hornickamesta.kutnahora.cz/',
-    reversed: true,
-  },
-  {
-    title: 'Diploma project in architecture',
-    index: '07',
-    alt: 'Diploma project in architecture',
-    src: '/images/diplomka-rez.jpg',
-    tech: 'AUTOCAD | RHINO | PHOTOSHOP | INDESIGN',
-    description: (
-      <>
-        <Description>
-          For my diploma project at the Faculty of Architecture of the CTU, I prepared a study on
-          the rehabilitation of the Radimský Mill in Kolín.
-        </Description>
-        <Description>
-          My goal was to restore the area for a new creative purpose such as a new coworking space
-          with shared and separate workplaces and gallery. I designed additional features, such as
-          residential and accommodation spaces and the surrounding public space.
-        </Description>
-      </>
-    ),
-    href: 'https://docplayer.cz/46566903-Konverze-arealu-radimskeho-mlyna-v-koline-diplomova-prace.html',
-    reversed: false,
   },
 ];
 
